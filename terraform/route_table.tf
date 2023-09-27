@@ -23,16 +23,6 @@ resource "aw_route_table_association" "public_1" {
 }
 
 
-resource "aws_route_table" "public_1" {
-
-    vpc_id=aws_vpc.vpc.id
-
-    tags= {
-        Name="${var.app_name}-rt-public-1"
-    }
-  
-}
-
 resource "aws_route" "public_2" {
 
   route_table_id = aws_route_table.public_2.id
