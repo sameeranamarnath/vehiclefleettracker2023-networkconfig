@@ -53,7 +53,7 @@ resource "aws_route" "private_1" {
 
   route_table_id = aws_route_table.private_1.id
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id=aws_internet_gateway.ngw1.id
+  nat_gateway_id=aws_nat_gateway.ngw1.id
   
 }
 
@@ -79,7 +79,7 @@ resource "aws_route" "private_2" {
 
   route_table_id = aws_route_table.private_2.id
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id=aws_internet_gateway.ngw1.id
+  nat_gateway_id=aws_nat_gateway.ngw1.id
   
 }
 
