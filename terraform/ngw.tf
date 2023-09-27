@@ -24,7 +24,7 @@ subnet_id = aws_subnet.public_1.id
 
 depends_on = [
 
-    aws_internet_gateway.igw
+    aws_internet_gateway.igw #igw
 ]
 
 tags = {
