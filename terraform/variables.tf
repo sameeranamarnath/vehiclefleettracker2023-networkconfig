@@ -1,4 +1,6 @@
-variable "aws_region"{}
+variable "aws_region"{
+    default="us-east-1" #bugfix
+}
 variable "app_name" {
     default="vehiclefleettracker2023-networkconfig"
 }
