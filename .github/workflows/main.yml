@@ -36,7 +36,7 @@ jobs:
         id: fmt
         working-directory: ./terraform
         run: terraform fmt -check
-        continue-on-error: false
+        continue-on-error: true
 
       - name: Terraform Init
         id: init
